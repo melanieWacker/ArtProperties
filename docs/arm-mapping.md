@@ -1,6 +1,6 @@
 # Art Properties to ARM Mapping
 =====================================================
-DRAFT
+# DRAFT
 
 *Note*: ArtProperties column headings do NOT reflect the original element name. These have been adjusted to support easier data mapping from the spreadsheet.
 
