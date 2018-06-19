@@ -50,12 +50,22 @@
 |Copyright Information   |bf:copyrightRegistration [a bf:CopyrightRegistration ; rdf:value “value” ] .   | 
 |Item_URI   | rdf:type [a bf:Item ] . AND <Item URI> bf:itemOf <Instance URI> . |Not contained in original data. Placeholder URIs generated to support BIBFRAME data model.
 |Item_Title   |arm_hasPreferredTitle [a bf:Title ; mainTitle “title value” ] .   |Original data included only 1 title. Values for copied into Instance Title and Item Title to support BF data model.
-|   |   | 
-|   |   | 
-|   |   | 
-|   |   | 
-|   |   | 
-|   |   | 
-|   |   | 
-|   |   | 
-|   |   | 
+|Accession Number   | bf:identifier [a arm:Accession Number rdf:value “value” ] . AND ch:hasCustodialHistory [a ch:CustodialHistory ; bf:hasPart [a ch:CustodialEvent ; ch:accessions [a arm:AccessionNumber ; rdf:value “value] ] ] . |
+| Inscription/Signature  | arm:markedBy [a arm:Inscription ; rdf:value “value” ] .  | 
+| Marks  | arm:markedBy [a arm:Watermark ; rdf:value “value” ] .  | Separated out from Notes-Public
+| Item_notes  | bf:Item ; bf:note [a bf:Note ; rdf:value “value”] .  | Separated out from Notes-Public
+| Exhibitions  | arm:hasExhibition [a schema:ExhibitionEvent ; bf:note [a bf:Note ; rdf:value ] ] .  | 
+| Provenance  | ch:hasCustodialHistory [a ch:CustodialHistory ; bf:hasPart [a ch:CustodialEvent ; bf:note [a bf:Note ; rdf:value “value” ] ] ] .  | 
+| Donor  |ch:CustodialHistory ; bf:hasPart [a ch:Donation ; arm:hasActivity [a ch:DonorActivity ; bf:agent [bf:Agent ; rdf:value “value” ] ] ] .   | 
+|Donor Identifier   |## ch:CustodialHistory ; bf:hasPart [a ch:Donation ; arm:hasActivity [a ch:DonorActivity ; bf:agent <URI> ] ] .   | 
+|Donor Qualifier   |## ch:Donation ; arm:hasActivity [a ch:DonorActivity ; bf:note [a bf:Note ; rdf:value “value” ] ] .   | 
+|Credit Line  |## ch:DonorActivity ; bf:agent [a bf:Agent ; bf:note [a bf:Note ; rdf:value “value” ] ] .   | 
+|Acquisition Date   |## ch:CustodialEvent ; arm:hasActivity [a ch:AcquisitionActivity ; bf:date “value” ] .   | 
+|Condition Rank   |arm:hasActivity [a arm:ConditionAssesmentActivity; arm:describes [a arm:PhysicalCondition ; rdf:value “value” ] .   | 
+|Condition Description   |## arm:physicalCondition [a arm:PhysicalCondition ; rdf:value “value” ] .   | 
+|Condition Date   |arm:hasActivity [a arm:ConditionAssesmentActivity; bf:date “value” ] .   |    
+|Conservation   |arm:hasActivity [a arm:ConservatorActivity ; bf:note [a bf:Note ; rdf:value “value” ] .   | 
+|Repository   |arm:hasActivity [a arm:RepositoryActivity ; bf:agent [a bf:Organization ; rdf:value “value” ] .   | Added. Not in original data
+|Repository_Identifier   |arm:hasActivity [a arm:RepositoryActivity ; bf:agent <URI> .   |Added. Not in original data
+|Campus Location   |arm:hasActivity [a arm:RepositoryActivity ; arm:atLocation [a bf:Place ; rdf:value “value” ] .
+|Building Location  |arm:hasActivity [a arm:RepositoryActivity ; arm:atLocation [a bf:Place ; rdf:value “value” ] .
