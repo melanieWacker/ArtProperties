@@ -1,2 +1,2 @@
-# ArtProperties
+# Art Properties
 This space will host documentation, models and sample RDF data for linked data representations of Columbia University’s art object metadata. Columbia's art collection is overseen by Art Properties at the Avery Architectural &amp; Fine Arts Library. The data was mapped to the [ARM ontology](https://github.com/LD4P/arm), which has been developed through the work of the ArtFrame and Rare Materials Ontology BIBFRAME extensions, both sub-projects of [Linked Data for Production (LD4P)](http://LD4P.org).
