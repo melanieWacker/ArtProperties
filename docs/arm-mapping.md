@@ -42,8 +42,7 @@
 |Genre Type Getty Identifier   |bf:genreForm <URI> .   | 
 |Period   |arm:hasStylePeriod [a arm:StylePeriod ; rdf:value “value” ] .   |To-do: Needs reconciliation to aat
 |Culture   |arm:hasStylePeriod [a arm:StylePeriod ; rdf:value “value” ] .   |To-do: Needs reconciliation to aat
-|Instance_URI   |rdf:type [a bf:Instance] . AND <InstanceURI> bf:instanceOf <WorkURI> AND <Instance URI> bf:hasItem <Item URI>
-   |Not contained in original data. Placeholder URIs generated to support BIBFRAME data model. 
+|Instance_URI   |rdf:type [a bf:Instance] . AND <InstanceURI> bf:instanceOf <WorkURI> AND <Instance URI> bf:hasItem <Item URI> |Not contained in original data. Placeholder URIs generated to support BIBFRAME data model. 
 |Instance_Title   |arm_hasPreferredTitle [a bf:Title ; mainTitle “title value” ] .   |Original data included only 1 title. Values for copied into Instance Title and Item Title to support BF data model 
 |Medium/Support   |arm:hasMaterial [a crm:57_Material ;  rdf:value “value” ] .   | 
 |Dimensions   |measure:hasMeasurementGroup [a measure:MeasurementGroup ; hasMeasurement [a measure:Measurement; rdf:value “value” ] .   | To-do: Separate out into components to take advantage of full measurement model
