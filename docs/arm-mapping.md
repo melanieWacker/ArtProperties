@@ -60,7 +60,7 @@
 |Donor Qualifier   |## ch:Donation ; arm:hasActivity [a ch:DonorActivity ; bf:note [a bf:Note ; rdf:value “value” ] ] .   | 
 |Credit Line  |## ch:DonorActivity ; bf:agent [a bf:Agent ; bf:note [a bf:Note ; rdf:value “value” ] ] .   | 
 |Acquisition Date   |## ch:CustodialEvent ; arm:hasActivity [a ch:AcquisitionActivity ; bf:date “value” ] .   | 
-|Condition Rank   |arm:hasActivity [a arm:ConditionAssesmentActivity; arm:describes [a arm:PhysicalCondition ; rdf:value “value” ] .   | 
+|Condition Rank   |arm:hasActivity [a arm:ConditionAssesmentActivity; frapo:hasOutput [a ConditionAssessment ; arm:describes [a arm:PhysicalCondition ; rdf:value “value” ] ] ].  AND arm:hasPhyicalCondition [a arm:PhysicalCondition ; rdf:value "value" ] . | 
 |Condition Description   |## arm:physicalCondition [a arm:PhysicalCondition ; rdf:value “value” ] .   | 
 |Condition Date   |arm:hasActivity [a arm:ConditionAssesmentActivity; bf:date “value” ] .   |    
 |Conservation   |arm:hasActivity [a arm:ConservatorActivity ; bf:note [a bf:Note ; rdf:value “value” ] .   | 
