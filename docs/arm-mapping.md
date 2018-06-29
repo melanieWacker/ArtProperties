@@ -53,7 +53,7 @@
 | Inscription/Signature  | arm:markedBy [a arm:Inscription ; rdf:value “value” ] .  | 
 | Marks  | arm:markedBy [a arm:Watermark ; rdf:value “value” ] .  | Separated out from Notes-Public
 | Item_notes  | bf:Item ; bf:note [a bf:Note ; rdf:value “value”] .  | Separated out from Notes-Public
-| Exhibitions  | arm:hasExhibition [a schema:ExhibitionEvent ; bf:note [a bf:Note ; rdf:value ] ] .  | 
+| Exhibitions  | arm:hasExhibition [a arm:Exhibition ; bf:partOf [a schema:ExhibitionEvent ; bf:note [a bf:Note ; rdf:value ] ] .  | 
 | Provenance  | ch:hasCustodialHistory [a ch:CustodialHistory ; bf:hasPart [a ch:CustodialEvent ; bf:note [a bf:Note ; rdf:value “value” ] ] ] .  | 
 | Donor  |ch:CustodialHistory ; bf:hasPart [a ch:Donation ; arm:hasActivity [a ch:DonorActivity ; bf:agent [bf:Agent ; rdf:value “value” ] ] ] .   | 
 |Donor Identifier   |## ch:CustodialHistory ; bf:hasPart [a ch:Donation ; arm:hasActivity [a ch:DonorActivity ; bf:agent <URI> ] ] .   | 
